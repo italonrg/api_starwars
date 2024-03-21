@@ -79,4 +79,5 @@ app.listen(port, () => {
     mongoose.connect(process.env.DB_URL, { useNewUrlParser: true, useUnifiedTopology: true });
 
     console.log(`Servidor rodando na porta ${port}`);
+    console.log(process.env.DB_URL)
 });
